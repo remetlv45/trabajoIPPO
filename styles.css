@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap");
+
+:root {
+  --niebla: #eef2f6;
+  --tinta: #131c2e;
+  --noche: #0f1a33;
+  --lente: #2c5cff;
+  --ambar: #ffb547;
+  --linea: #c9d3e0;
+  --suave: #55627a;
+  --titulos: "Bricolage Grotesque", "Trebuchet MS", "Segoe UI", sans-serif;
+  --texto: "Literata", Georgia, "Times New Roman", serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  margin: 0;
+  background: var(--niebla);
+  color: var(--tinta);
+  font-family: var(--texto);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--lente); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--ambar); outline-offset: 3px; }
+
+h1, h2, h3 {
+  font-family: var(--titulos);
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Barra superior ---------- */
+.barra {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 0.8rem clamp(1rem, 5vw, 4rem);
+  background: var(--noche);
+}
+
+.marca {
+  font-family: var(--titulos);
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.barra nav { display: flex; flex-wrap: wrap; gap: 0.3rem 1.4rem; }
+
+.barra nav a {
+  font-family: var(--titulos);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #cfd8ea;
+  text-decoration: none;
+  padding: 0.2rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.barra nav a:hover { color: #fff; border-bottom-color: var(--ambar); }
+
+/* ---------- Portada ---------- */
+.portada {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+  padding: clamp(2rem, 7vw, 5rem) clamp(1rem, 5vw, 4rem);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.dato {
+  display: inline-block;
+  margin: 0 0 1.2rem;
+  padding: 0.25rem 0.9rem;
+  border: 1.5px solid var(--lente);
+  border-radius: 2rem;
+  font-family: var(--titulos);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--lente);
+}
+
+.portada h1 {
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  font-weight: 800;
+}
+
+.entradilla { font-size: 1.2rem; max-width: 34em; }
+
+.aviso {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--ambar);
+  color: var(--suave);
+  font-size: 0.95rem;
+}
+
+/* Fotografías: marco redondeado sobre fondo oscuro, como la pulsera */
+.foto { margin: 0; }
+
+.foto img {
+  width: 100%;
+  border-radius: 1.6rem;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: var(--noche);
+  box-shadow: 0 0 0 3px var(--lente);
+}
+
+.foto-grande img { aspect-ratio: 5 / 4; }
+
+.foto figcaption {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--suave);
+}
+
+/* ---------- Bloques ---------- */
+.bloque {
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 5vw, 4rem);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.bloque h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 1.8rem;
+}
+
+.bloque-oscuro {
+  max-width: none;
+  background: var(--noche);
+  color: #e5ebf7;
+}
+
+.bloque-oscuro > * { max-width: 1152px; margin-left: auto; margin-right: auto; }
+.bloque-oscuro .foto figcaption { color: #9fb0cf; }
+
+.tres-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.paso { padding-top: 1rem; border-top: 3px solid var(--ambar); }
+.paso h3 { font-size: 1.3rem; }
+.paso p { margin: 0; color: #cdd7ec; }
+
+.dos-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.dos-col p { margin-top: 0; max-width: 34em; }
+
+.beneficios { list-style: none; margin: 0; padding: 0; }
+
+.beneficios li {
+  padding: 1rem 0 1rem 1.3rem;
+  border-left: 4px solid var(--lente);
+  border-bottom: 1px solid var(--linea);
+}
+
+.beneficios li:last-child { border-bottom: 0; }
+.beneficios h3 { font-size: 1.15rem; margin-bottom: 0.25rem; }
+.beneficios p { margin: 0; font-size: 0.97rem; color: var(--suave); }
+
+.nota {
+  margin-top: 2rem;
+  padding: 1rem 1.3rem;
+  background: #fff;
+  border: 1.5px dashed var(--ambar);
+  border-radius: 0.8rem;
+  max-width: 44em;
+}
+
+/* ---------- Tablas ---------- */
+.tabla-envoltorio { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.97rem; }
+
+caption {
+  text-align: left;
+  padding-bottom: 0.8rem;
+  font-family: var(--titulos);
+  font-size: 0.95rem;
+  color: #9fb0cf;
+}
+
+th, td { padding: 0.85rem 1rem; text-align: left; vertical-align: top; }
+
+.bloque-oscuro tr { border-bottom: 1px solid #2b3a5e; }
+
+.comparativa { background: #fff; border-radius: 0.8rem; overflow: hidden; }
+.comparativa thead th {
+  background: var(--tinta);
+  color: #fff;
+  font-family: var(--titulos);
+  font-weight: 700;
+}
+.comparativa tbody tr { border-bottom: 1px solid var(--linea); }
+.comparativa tbody td:first-child { font-weight: 600; }
+.ficha-tabla caption { color: var(--suave); }
+.ficha-tabla th { width: 28%; font-family: var(--titulos); font-weight: 700; color: var(--lente); }
+.bloque-oscuro .comparativa { color: var(--tinta); }
+.bloque-oscuro .comparativa tr { border-bottom: 1px solid var(--linea); }
+
+/* ---------- Línea de tiempo ---------- */
+.intro-seccion { max-width: 40em; margin-top: -0.6rem; margin-bottom: 2.2rem; }
+
+.linea {
+  list-style: none;
+  margin: 0 0 3rem;
+  padding: 0 0 0 1.8rem;
+  border-left: 3px solid var(--linea);
+}
+
+.linea li { position: relative; padding-bottom: 1.8rem; max-width: 46em; }
+
+.linea li::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.8rem - 9px);
+  top: 0.35rem;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--niebla);
+  border: 3px solid var(--lente);
+}
+
+.linea li.actual::before { background: var(--ambar); border-color: var(--tinta); }
+
+.anio {
+  display: block;
+  font-family: var(--titulos);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--lente);
+}
+
+.linea h3 { font-size: 1.3rem; margin-bottom: 0.3rem; }
+.linea p { margin: 0; }
+.linea li.actual h3 { font-size: 1.6rem; }
+
+.subtitulo { font-size: 1.5rem; margin-top: 1rem; }
+
+/* ---------- Galería ---------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem;
+  padding: 0.6rem 0.6rem 0;
+}
+
+/* ---------- Enlaces ---------- */
+.enlaces { list-style: none; margin: 0; padding: 0; max-width: 44em; }
+
+.enlaces li { padding: 0.8rem 0; border-bottom: 1px solid var(--linea); }
+.enlaces a { font-family: var(--titulos); font-weight: 500; font-size: 1.1rem; }
+
+/* ---------- Pie ---------- */
+.pie {
+  padding: 2rem clamp(1rem, 5vw, 4rem);
+  background: var(--tinta);
+  color: #aeb9d0;
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.pie p { margin: 0.2rem 0; }
+
+/* ---------- Pantallas pequeñas ---------- */
+@media (max-width: 860px) {
+  .portada, .dos-col, .tres-col { grid-template-columns: 1fr; }
+  .galeria { grid-template-columns: 1fr; }
+  .ficha-tabla th { width: auto; }
+}
+
+.bloque-oscuro .enlaces li { border-bottom-color: #2b3a5e; }
+.bloque-oscuro .enlaces a { color: var(--ambar); }
+.bloque-oscuro .linea { border-left-color: #2b3a5e; }
+.bloque-oscuro .linea li::before { background: var(--noche); }
+.bloque-oscuro .linea li.actual::before { background: var(--ambar); border-color: #fff; }
+.bloque-oscuro .anio { color: var(--ambar); }
+.bloque-oscuro .subtitulo { color: #fff; }

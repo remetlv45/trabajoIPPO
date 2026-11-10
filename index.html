@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mudra Pro · Pulsera neuronal para controlar dispositivos con los dedos</title>
+  <meta name="description" content="Mudra Pro (2026): pulsera que lee las señales eléctricas de la muñeca para controlar ordenadores y gafas inteligentes sin tocar nada.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="barra">
+    <a class="marca" href="#inicio">Mudra Pro</a>
+    <nav aria-label="Menú principal">
+      <a href="#por-que">Por qué la elegí</a>
+      <a href="#funcionamiento">Cómo funciona</a>
+      <a href="#ficha">Ficha técnica</a>
+      <a href="#evolucion">Evolución</a>
+      <a href="#galeria">Fotos</a>
+      <a href="#mas-info">Más información</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section id="inicio" class="portada">
+      <div class="portada-texto">
+        <p class="dato">Hardware de 2026 · Interacción persona-ordenador</p>
+        <h1>Mover un dedo es suficiente</h1>
+        <p class="entradilla">
+          <strong>Mudra Pro</strong> es una pulsera de la empresa israelí Wearable Devices que detecta las
+          señales eléctricas de la muñeca para saber qué dedo vas a mover. Así se puede controlar un
+          ordenador, una pantalla o unas gafas inteligentes <em>sin tocar nada</em>.
+        </p>
+        <p class="aviso">Anunciada el 13 de mayo de 2026. Preventa abierta desde el 4 de junio de 2026 para empresas, fabricantes e investigadores.</p>
+      </div>
+      <figure class="foto foto-grande">
+        <img src="https://mudra-band.com/cdn/shop/files/Mudra_Pro_render_01.png?v=1779872970"
+             alt="Imagen del módulo Mudra Pro, una pulsera delgada con sensores en la cara interior"
+             width="1200" height="900">
+        <figcaption>Mudra Pro. Imagen: Mudra / Wearable Devices.</figcaption>
+      </figure>
+    </section>
+
+    <!-- POR QUÉ -->
+    <section id="por-que" class="bloque">
+      <h2>Por qué la he incluido</h2>
+      <div class="dos-col">
+        <div>
+          <p>
+            Casi todos los dispositivos de entrada que usamos (teclado, ratón, pantalla táctil) obligan a
+            <strong>tocar una superficie</strong>. Mudra Pro propone lo contrario: una interfaz sin contacto
+            que se basa en la <em>intención</em> del movimiento, porque el sensor detecta la señal nerviosa y
+            muscular antes de que el dedo se mueva del todo.
+          </p>
+          <p>
+            La elegí porque es hardware nuevo de este año y porque rompe con lo habitual: no es un
+            teclado, ni una cámara, ni unas gafas, sino una <strong>forma distinta de introducir datos</strong>.
+            Además, abre debates típicos de la IPO: naturalidad, latencia, accesibilidad y privacidad
+            de los datos del cuerpo.
+          </p>
+        </div>
+        <ul class="beneficios">
+          <li>
+            <h3>Sin tocar ni mirar</h3>
+            <p>Funciona con la mano caída o fuera del alcance de una cámara, algo imposible con un ratón o con el reconocimiento de gestos por vídeo.</p>
+          </li>
+          <li>
+            <h3>Respuesta muy rápida</h3>
+            <p>Al leer la señal antes de que termine el movimiento, reduce el retardo entre lo que piensas hacer y lo que hace el sistema.</p>
+          </li>
+          <li>
+            <h3>Gestos discretos</h3>
+            <p>Un pequeño pellizco o un toque de dedos basta, sin hablar en voz alta ni agitar el brazo en público.</p>
+          </li>
+          <li>
+            <h3>Accesibilidad</h3>
+            <p>Puede servir a personas con movilidad reducida, ya que bastan movimientos muy pequeños.</p>
+          </li>
+          <li>
+            <h3>Plataforma para desarrolladores</h3>
+            <p>Incluye una librería en Python y un simulador para crear y probar nuevas interacciones.</p>
+          </li>
+        </ul>
+      </div>
+      <p class="nota">
+        Dos matices: es un <strong>kit para desarrolladores y empresas</strong>, no un producto de tienda, y
+        aunque la empresa lo promociona como una tecnología «cerebro-ordenador», lo que mide son señales de la
+        <strong>muñeca</strong>, no del cerebro.
+      </p>
+    </section>
+
+    <!-- FUNCIONAMIENTO -->
+    <section id="funcionamiento" class="bloque bloque-oscuro">
+      <h2>Cómo funciona</h2>
+      <div class="tres-col">
+        <div class="paso">
+          <h3>Electromiografía (EMG)</h3>
+          <p>Tres canales de sensores en contacto con la piel captan la actividad eléctrica de los músculos y nervios de la muñeca cuando mueves los dedos.</p>
+        </div>
+        <div class="paso">
+          <h3>Movimiento y pulso</h3>
+          <p>Un sensor de movimiento (IMU) sigue la posición de la mano y un sensor óptico (PPG) mide señales del flujo sanguíneo, como el pulso.</p>
+        </div>
+        <div class="paso">
+          <h3>Inteligencia artificial</h3>
+          <p>Un algoritmo combina las tres señales y las traduce en gestos o en el movimiento de un puntero, que se envía por conexión inalámbrica al dispositivo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FICHA -->
+    <section id="ficha" class="bloque">
+      <h2>Ficha técnica</h2>
+      <div class="tabla-envoltorio">
+        <table class="comparativa ficha-tabla">
+          <caption>Datos publicados por el fabricante</caption>
+          <tbody>
+            <tr><th scope="row">Nombre</th><td>Mudra Pro (Dev Kit v2)</td></tr>
+            <tr><th scope="row">Fabricante</th><td>Wearable Devices Ltd. (Mudra), Israel</td></tr>
+            <tr><th scope="row">Formato</th><td>Módulo de muñeca; el kit trae 2 pulseras</td></tr>
+            <tr><th scope="row">Sensores</th><td>EMG de superficie de 3 canales, IMU de 6 ejes y sensor óptico PPG</td></tr>
+            <tr><th scope="row">Procesador</th><td>ARM Cortex-M33 a 128 MHz</td></tr>
+            <tr><th scope="row">Conexión</th><td>Inalámbrica a 2,4 GHz y USB-C (carga, datos y actualizaciones)</td></tr>
+            <tr><th scope="row">Batería</th><td>Li-Ion recargable de 35 mAh</td></tr>
+            <tr><th scope="row">Control</th><td>Modo de ratón combinando IMU y EMG</td></tr>
+            <tr><th scope="row">Software</th><td>SDK en Python (12 meses incluidos) y plataforma Mudra Studio con simulador</td></tr>
+            <tr><th scope="row">Disponibilidad</th><td>Preventa para empresas, fabricantes e investigadores; precio no publicado</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- EVOLUCIÓN -->
+    <section id="evolucion" class="bloque bloque-oscuro">
+      <h2>Cómo se ha llegado hasta aquí</h2>
+      <p class="intro-seccion">
+        Mudra Pro es el último paso de una búsqueda larga: controlar los ordenadores con movimientos cada
+        vez más naturales y con menos objetos de por medio.
+      </p>
+
+      <ol class="linea">
+        <li>
+          <span class="anio">Años 60–80</span>
+          <h3>Teclado y ratón</h3>
+          <p>Permitieron manejar el ordenador, pero exigían una mesa, una superficie y las dos manos ocupadas.</p>
+        </li>
+        <li>
+          <span class="anio">2007</span>
+          <h3>Pantalla táctil</h3>
+          <p>El smartphone popularizó tocar directamente la pantalla. Se ganó naturalidad, pero seguía siendo necesario tocar y mirar.</p>
+        </li>
+        <li>
+          <span class="anio">2010–2012</span>
+          <h3>Cámaras de movimiento</h3>
+          <p>Dispositivos como Kinect o Leap Motion permitieron gestos en el aire sin tocar nada. Su límite: necesitan ver tu mano, con buena luz y sin obstáculos.</p>
+        </li>
+        <li>
+          <span class="anio">Hacia 2014</span>
+          <h3>Primeras pulseras con EMG</h3>
+          <p>El brazalete Myo fue de los primeros productos de consumo que leyó señales musculares del antebrazo. Funcionaba, pero era voluminoso y poco preciso, y acabó retirándose.</p>
+        </li>
+        <li>
+          <span class="anio">2023–2025</span>
+          <h3>Pulseras neuronales de consumo</h3>
+          <p>Mudra Band y Mudra Link llevaron la idea a relojes y gafas, y Meta presentó en 2025 su Neural Band para unas gafas con pantalla. La tecnología se hizo más fina y cómoda.</p>
+        </li>
+        <li class="actual">
+          <span class="anio">2026</span>
+          <h3>Mudra Pro</h3>
+          <p>Reúne EMG, movimiento y pulso en un módulo más delgado y ofrece acceso a las señales en bruto, para que investigadores y empresas diseñen sus propias interacciones.</p>
+        </li>
+      </ol>
+
+      <h3 class="subtitulo">Qué sustituye y en qué mejora</h3>
+      <div class="tabla-envoltorio">
+        <table class="comparativa">
+          <thead>
+            <tr><th scope="col">Dispositivo anterior</th><th scope="col">Limitación</th><th scope="col">Qué aporta Mudra Pro</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ratón y teclado</td><td>Requieren una superficie y las manos ocupadas</td><td>Control con la mano libre, incluso en movimiento</td></tr>
+            <tr><td>Mandos de gafas y pantallas</td><td>Un objeto más que llevar y que se puede perder</td><td>La propia mano es el mando</td></tr>
+            <tr><td>Cámaras de gestos</td><td>Necesitan ver la mano y buena iluminación</td><td>Funciona sin cámara y con la mano en cualquier posición</td></tr>
+            <tr><td>Brazaletes EMG antiguos</td><td>Grandes e imprecisos</td><td>Módulo más delgado con más sensores y un SDK abierto</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="bloque">
+      <h2>Fotos</h2>
+      <div class="galeria">
+        <figure class="foto">
+          <img src="https://mudra-band.com/cdn/shop/files/Mudra_Pro_render_01.png?v=1779872970"
+               alt="Render del módulo Mudra Pro"
+               width="1200" height="900" loading="lazy">
+          <figcaption>El módulo Mudra Pro. Imagen: Mudra.</figcaption>
+        </figure>
+        <figure class="foto">
+          <img src="https://mudra-band.com/cdn/shop/files/preview_images/7eae6340212d4b7e96439037662280ca.thumbnail.0000000000_630x.jpg?v=1780216836"
+               alt="Fotograma del vídeo de presentación de Mudra Pro Dev Kit v2"
+               width="630" height="400" loading="lazy">
+          <figcaption>Vídeo de presentación del Dev Kit v2. Imagen: Mudra.</figcaption>
+        </figure>
+        <figure class="foto">
+          <img src="https://mudra-band.com/cdn/shop/files/SDK_code_Image.png?v=1780475042"
+               alt="Ejemplo de código en Python del SDK de Mudra Pro"
+               width="1200" height="800" loading="lazy">
+          <figcaption>Ejemplo del SDK en Python. Imagen: Mudra.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MÁS INFORMACIÓN -->
+    <section id="mas-info" class="bloque bloque-oscuro">
+      <h2>Dónde obtener más información</h2>
+      <ul class="enlaces">
+        <li><a href="https://mudra-band.com/pages/mudra-band-pro">Página oficial de Mudra Pro</a></li>
+        <li><a href="https://www.globenewswire.com/news-release/2026/06/04/3306776/0/en/Wearable-Devices-Announces-Pre-Order-for-Mudra-Pro-to-Fast-Track-AI-and-XR-Programs-for-Enterprise-and-OEM-Customers.html">Nota de prensa de la preventa (4 de junio de 2026)</a></li>
+        <li><a href="https://mudra-band.com/pages/howitworks">Cómo funciona la tecnología Mudra</a></li>
+        <li><a href="https://immersive-technology.com/immersivetechnology/wearable-devices-open-mudra-pro-pre-orders-early/">Immersive Technology: reportaje sobre la preventa</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Trabajo de Interacción Persona-Ordenador. Información recopilada en noviembre de 2026; fechas y precios pueden cambiar.</p>
+    <p>Las imágenes pertenecen a Mudra / Wearable Devices y se muestran con fines educativos.</p>
+  </footer>
+
+</body>
+</html>
